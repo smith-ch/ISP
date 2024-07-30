@@ -1,0 +1,11 @@
+﻿1. Identificación de Responsabilidades:
+   - SimplePrinter: Solo imprime documentos.
+   - MultiFunctionPrinter: Imprime y escanea documentos.
+
+2. Creación de Interfaces Específicas:
+   - IPrinter: Define los métodos Print y Scan.
+
+3. Refactorización de Clases:
+   - AbstractPrinter implementa la interfaz IPrint con implementaciones predeterminadas.
+   - SimplePrinter hereda de AbstractPrinter y utiliza la implementación predeterminada de Print.
+   - MultiFunctionPrinter hereda de AbstractPrinter y proporciona una implementación específica de Scan.
